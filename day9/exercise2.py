@@ -9,12 +9,12 @@ def call_counter(func):
 
 @call_counter
 def greet(name):
-    return f"Hello, {name}!"
+    return f"Hizzz, {name}!"
 
 
 
-print(greet("Alice"))
-print(greet("Bob"))
-print(greet("Charlie"))
+print(greet("layan"))
+print(greet("noor"))
+print(greet("oday"))
 
 print("Total calls:", greet.calls)

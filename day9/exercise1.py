@@ -4,7 +4,7 @@ def multiplier_generator(base):
             return x * x
         return base * x
     return multiplier
-
+ 
 
 
 doubler = multiplier_generator(2)
@@ -12,6 +12,6 @@ tripler = multiplier_generator(3)
 squarer = multiplier_generator(0)
 
 
-print("Doubler:", doubler(5))   
-print("Tripler:", tripler(5))   
-print("Squarer:", squarer(5))   
+print("Doubler:", doubler(4))   
+print("Tripler:", tripler(4))   
+print("Squarer:", squarer(4))   

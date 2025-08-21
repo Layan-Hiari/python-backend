@@ -50,3 +50,27 @@ class Library:
                     print(f"'{book.title}' was not borrowed.")
                     return
         print(f"No book with title '{title}' found.")
+
+      
+my_library = Library("City Library")
+
+
+book1 = Book("1984", "George Orwell")
+book2 = Book("The Great Gatsby", "F. Scott Fitzgerald")
+book3 = Book("To Kill a Mockingbird", "Harper Lee")
+
+
+my_library.add_book(book1)
+my_library.add_book(book2)
+my_library.add_book(book3)
+
+
+my_library.display_books()
+
+
+my_library.lend_book("1984")
+my_library.display_books()
+
+my_library.return_book("1984")
+my_library.display_books()
+

@@ -63,3 +63,4 @@ def process_passwords(input_file, output_file):
 
 
 process_passwords("passwords.txt", "strong_passwords.txt")
+

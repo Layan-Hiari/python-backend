@@ -1,17 +1,25 @@
-numbers = [10, 45, 32, 67, 89, 21, 89]
+def find_second_largest(nums):
+    if len(nums) < 2:
+        return None  
+    largest = second = float('-inf')
+    for num in nums:
+        if num > largest:
+            second = largest
+            largest = num
+        elif largest > num > second:
+            second = num
 
-unique_sorted = sorted(set(numbers), reverse=True)
+    return second if second != float('-inf') else None
 
-if len(unique_sorted) >= 2:
-    second_largest = unique_sorted[1]
-else:
-    second_largest = None
 
+def merge_dictionaries(dict1, dict2):
+    return dict1 | dict2  
+
+numbers = [12, 45, 2, 41, 31, 10]
+second_largest = find_second_largest(numbers)
 print("Second Largest Number:", second_largest)
 
-dict1 = {'a': 1, 'b': 2}
-dict2 = {'b': 3, 'c': 4}
-
-merged_dict = dict1 | dict2
-
-print("Merged Dictionary:", merged_dict)
+dict_a = {'a': 1, 'b': 2}
+dict_b = {'b': 3, 'c': 4}
+merged = merge_dictionaries(dict_a, dict_b)
+print("Merged Dictionary:", merged)

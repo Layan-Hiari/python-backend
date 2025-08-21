@@ -13,5 +13,5 @@ def validate_positive(func):
 def add(a, b):
     return a + b
 
-print(add(5, 10))  
+print(add(7, 20))  
 

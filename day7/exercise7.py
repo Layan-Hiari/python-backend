@@ -5,7 +5,7 @@ class MenuItem:
         self.category = category
 
     def display(self):
-        return f"{self.name} ({self.category}) -  {self.price:.2f}"
+        return f"{self.name} ({self.category}) - {self.price:.2f}"
 
 
 class Order:
